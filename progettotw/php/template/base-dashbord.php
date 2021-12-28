@@ -11,7 +11,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style-dashbord.css" />
 
-        
 
         <!-- Titolo Pagina -->
         <title><?php echo $templateParams["titolo"]; ?></title>
@@ -20,13 +19,13 @@
     <body>
     
         <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 topheader">
-            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Eco - Tech</a>
+            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Eco Tech</a>
             <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-nav">
                 <div class="nav-item text-nowrap">
-                    <a class="nav-link px-3" href="#">Esci</a>
+                    <a class="nav-link px-3" href="#">Exit</a>
                 </div>
             </div>
         </header>
@@ -46,25 +45,25 @@
                             <li class="nav-item">
                                 <a class="nav-link fs-6" href="#">
                                 <span data-feather="file"></span><i class="bi bi-box-seam me-1 fs-5"></i>
-                                    Ordini
+                                    Orders
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fs-6" href="#">
                                 <span data-feather="shopping-cart"></span><i class="bi bi-list-task me-1 fs-5"></i>
-                                    Prodotti
+                                    Products
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fs-6" href="#">
                                 <span data-feather="users"></span><i class="bi bi-person-lines-fill me-1 fs-5"></i>
-                                    Clienti
+                                    Clients
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fs-6" href="#">
                                 <span data-feather="bar-chart-2"></span><i class="bi bi-graph-up me-1 fs-5"></i>
-                                    Statistiche
+                                    Statistics
                                 </a>
                             </li>
                         </ul>
@@ -79,25 +78,25 @@
                             <li class="nav-item">
                                 <a class="nav-link fs-6" href="#">
                                 <span data-feather="file-text"></span><i class="bi bi-person-plus me-1 fs-5"></i>
-                                    Crea Account
+                                    Create Account
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fs-6" href="#">
                                 <span data-feather="file-text"></span><i class="bi bi-sliders me-1 fs-5"></i>
-                                    Gestione Profilo
+                                    Profile Manager
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fs-6" href="#">
                                 <span data-feather="file-text"></span><i class="bi bi-gear me-1 fs-5"></i>
-                                    Impostazioni
+                                    Settings
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fs-6" href="#">
                                 <span data-feather="file-text"></span><i class="bi bi-box-arrow-right me-1 fs-5"></i>
-                                    Esci
+                                    Exit
                                 </a>
                             </li>
                         </ul>
