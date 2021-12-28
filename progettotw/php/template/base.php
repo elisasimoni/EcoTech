@@ -34,13 +34,14 @@
         <div class="collapse navbar-collapse justify-content-end navigation">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a <?php isActive("index.php"); ?> class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    <!-- il secondo parametro della funzione active sono le classi di ogni pagina-->
+                    <a <?php isActive("index.php", "nav-link"); ?>  aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a <?php isActive("shop.php"); ?>  class="nav-link" aria-current="page" href="shop.php">Shop</a>
+                    <a <?php isActive("shop.php","nav-link"); ?>  aria-current="page" href="shop.php">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a <?php isActive("tracking.php"); ?>  class="nav-link" aria-current="page" href="tracking.php">Tracking</a>
+                    <a <?php isActive("tracking.php","nav-link"); ?>  aria-current="page" href="tracking.php">Tracking</a>
                 </li>
             </ul>
 
