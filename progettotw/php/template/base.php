@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script type="text/javascript" src="js/function.js"></script>
+    <?php
+      if(isset($templateParams["js"])):
+          foreach($templateParams["js"] as $script):
+      ?>
+          <script src="<?php echo $script; ?>"></script>
+      <?php
+          endforeach;
+      endif;
+      ?>
 
     <!-- Titolo Pagina -->
     <title><?php echo $templateParams["titolo"]; ?></title>
@@ -28,7 +36,7 @@
         <button class="navbar-toggler border-top-0 border-start-0 border-end-0 border-bottom-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
 
         <!-- Voci Menù -->
         <div class="collapse navbar-collapse justify-content-end navigation">
@@ -42,6 +50,12 @@
                 </li>
                 <li class="nav-item">
                     <a <?php isActive("tracking.php","nav-link"); ?>  aria-current="page" href="tracking.php">Tracking</a>
+                </li>
+                <li class="nav-item">
+                    <a <?php isActive("login.php","nav-link"); ?>  aria-current="page" href="login.php">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a <?php isActive("registration.php","nav-link"); ?>  aria-current="page" href="registration.php">Registration</a>
                 </li>
             </ul>
 

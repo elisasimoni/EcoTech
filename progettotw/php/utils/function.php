@@ -10,4 +10,14 @@ function isActive($pagename, $classStart){
         echo "class='$classStart'";
     }
 }
+
+function isUserLoggedIn(){
+    return !empty($_SESSION['idCLIENTE']);
+}
+
+function registerLoggedUser($user){
+    $_SESSION["idCLIENTE"] = $user["idCLIENTE"];
+    $_SESSION["email"] = $user["email"];
+    $_SESSION["nome"] = $user["nome"];
+}
 ?>
