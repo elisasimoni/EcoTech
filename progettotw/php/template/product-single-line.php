@@ -6,7 +6,7 @@
 
         <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg border-top-0 border-start-0 border-end-0 border-bottom-0">
-                <img class="card-image" src="https://urbanwear.thunder-stores.com/wp-content/uploads/2021/06/HAVEN-KAPITAL-5G-Cotton-Cable-Knitb-x-Leather-Himalayan-Cap-KHAKI-1_2048x2048.progressive_e6921c96-6b81-4f8e-8bde-214652f29424_2048x2048.progressive-1229x1536.jpg" class="card-img-top" alt="...">
+                <img class="card-image" src="img/1.jpg" class="card-img-top" alt="...">
                 <div class="d-flex flex-column h-100 p-5 pt-1 pb-3 text-white text-shadow-1">
                     <h2 class="pt-0 mt-5 mb-4 display-6 lh-1 fw-bold">Test Product</h2>
                     <ul class="d-flex list-unstyled mt-5">
@@ -27,7 +27,7 @@
 
         <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg border-top-0 border-start-0 border-end-0 border-bottom-0">
-                <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gallet_clamshell_600x600_movement.jpg" class="card-img-top" alt="...">
+                <img class="card-image" src="img/5.jpg" class="card-img-top" alt="...">
                 <div class="d-flex flex-column h-100 p-5 pt-1 pb-3 text-white text-shadow-1">
                     <h2 class="pt-0 mt-5 mb-4 display-6 lh-1 fw-bold">Test Product</h2>
                     <ul class="d-flex list-unstyled mt-5">
@@ -49,7 +49,7 @@
     
         <div class="col">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg border-top-0 border-start-0 border-end-0 border-bottom-0">
-                <img class="card-image" src="https://urbanwear.thunder-stores.com/wp-content/uploads/2021/06/HAVEN-KAPITAL-5G-Cotton-Cable-Knitb-x-Leather-Himalayan-Cap-KHAKI-1_2048x2048.progressive_e6921c96-6b81-4f8e-8bde-214652f29424_2048x2048.progressive-1229x1536.jpg" class="card-img-top" alt="...">
+                <img class="card-image" src="img/4.jpg" class="card-img-top" alt="...">
                 <div class="d-flex flex-column h-100 p-5 pt-1 pb-3 text-white text-shadow-1">
                     <h2 class="pt-0 mt-5 mb-4 display-6 lh-1 fw-bold">Test Product</h2>
                     <ul class="d-flex list-unstyled mt-5">
