@@ -11,6 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style-dashbord.css" />
 
+        
 
         <!-- Titolo Pagina -->
         <title><?php echo $templateParams["titolo"]; ?></title>
@@ -18,100 +19,75 @@
     </head>
     <body>
     
-        <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 topheader">
-            <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Eco Tech</a>
-            <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-nav">
-                <div class="nav-item text-nowrap">
-                    <a class="nav-link px-3" href="#">Exit</a>
-                </div>
-            </div>
-        </header>
-
+        
         <div class="container-fluid">
             <div class="row">
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                
+                <div class="col-2 navigation">
                     
-                    <div class="position-sticky pt-3">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active fs-6" aria-current="page" href="#">
-                                <span data-feather="home"></span><i class="bi bi-speedometer2 me-1 fs-5"></i>
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-6" href="#">
-                                <span data-feather="file"></span><i class="bi bi-box-seam me-1 fs-5"></i>
-                                    Orders
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-6" href="#">
-                                <span data-feather="shopping-cart"></span><i class="bi bi-list-task me-1 fs-5"></i>
-                                    Products
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-6" href="#">
-                                <span data-feather="users"></span><i class="bi bi-person-lines-fill me-1 fs-5"></i>
-                                    Clients
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-6" href="#">
-                                <span data-feather="bar-chart-2"></span><i class="bi bi-graph-up me-1 fs-5"></i>
-                                    Statistics
-                                </a>
-                            </li>
-                        </ul>
+                    <!-- Barra di navigazione Veriticale -->
+                    <nav class="nav">
 
-                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                            <span>Account</span>
-                            <a class="link-secondary" href="#" aria-label="Add a new report">
-                                <span data-feather="plus-circle"></span>
+                        <!-- Header con logo della sidebar -->
+                        <header class="navbar-brand">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/logo.png" class="img-fluid" alt="">
                             </a>
-                        </h6>
-                        <ul class="nav flex-column mb-2">
-                            <li class="nav-item">
-                                <a class="nav-link fs-6" href="#">
-                                <span data-feather="file-text"></span><i class="bi bi-person-plus me-1 fs-5"></i>
-                                    Create Account
-                                </a>
+                        </header>
+
+                        <!-- Voci del menù -->
+                        <ul>
+
+                            <h6 class="headerNav">
+                                <span>Amministrazione</span>
+                                <hr/>
+                            </h6>
+
+                            <li class="nav-item" style="text-decoration:none">
+                                <a href="" class="nav-link ps-3 active"><i class="bi bi-speedometer2 me-2 px-2 py-1"></i>Dashbord</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-6" href="#">
-                                <span data-feather="file-text"></span><i class="bi bi-sliders me-1 fs-5"></i>
-                                    Profile Manager
-                                </a>
+                                <a href="" class="nav-link ps-3"><i class="bi bi-box-seam me-2 px-2 py-1"></i>Ordini</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-6" href="#">
-                                <span data-feather="file-text"></span><i class="bi bi-gear me-1 fs-5"></i>
-                                    Settings
-                                </a>
+                                <a href="" class="nav-link ps-3"><i class="bi bi-list-task me-2 px-2 py-1"></i>Prodotti</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-6" href="#">
-                                <span data-feather="file-text"></span><i class="bi bi-box-arrow-right me-1 fs-5"></i>
-                                    Exit
-                                </a>
+                                <a href="" class="nav-link ps-3"><i class="bi bi-people me-2 px-2 py-1"></i>Clienti</a>
                             </li>
+
+                            <h6 class="headerNav pt-3">
+                                <span>Account</span>
+                                <hr/>
+                            </h6>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link ps-3"><i class="bi bi-person-plus me-2 px-2 py-1"></i>Utenti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link ps-3"><i class="bi bi-sliders me-2 px-2 py-1"></i>Impostazioni</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link ps-3"><i class="bi bi-box-arrow-left me-2 px-2 py-1"></i>Esci</a>
+                            </li>
+
                         </ul>
-                    </div>
-                </nav>
 
-                <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 
-                    <?php
-                    if(isset($templateParams["contenuto"])){
-                        require($templateParams["contenuto"]);
-                    }
-                    ?>
+                    </nav>
 
-                </main>
+
+                </div>
+
+                
+                
+                    <div class="col-2"></div>
+                    <main class="col-10 ms-0 bg-light px-0 py-0 mx-0 my-0">
+
+                        
+                    </main>
+
+            
 
             </div>
         </div>
