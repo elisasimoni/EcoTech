@@ -67,8 +67,15 @@ nav{
     background-size: cover;
   }
   
-  .rounded-4 { border-radius: .5rem; }
-.rounded-5 { border-radius: 1rem; }
+.rounded-4 
+{ 
+    border-radius: .5rem; 
+}
+
+.rounded-5 
+{ 
+    border-radius: 1rem; 
+}
 
 .card-image{
     max-height: 400px;
@@ -77,4 +84,3 @@ nav{
 .prezzo{
     font-size: 18px;
 }
-
