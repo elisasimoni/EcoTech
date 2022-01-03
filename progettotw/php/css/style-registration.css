@@ -1,0 +1,61 @@
+/* Google Font per intestazioni */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+/* Google Font per contenut */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand:wght@400&display=swap');
+
+html,body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+h1{
+  font-family: 'Comfortaa', cursive;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: #4d7298;
+}
+
+.buttLog{
+  background-color: #4d7298;
+  color: #fff;
+}
+
+.buttLog:hover{
+  background-color: #77a6b6;
+  color: #fff;
+}
+
+.supporto{
+  padding-top: 5%;
+}
+
+.supporto a{
+  color: #4d7298;
+}
