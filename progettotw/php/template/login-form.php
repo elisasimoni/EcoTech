@@ -18,7 +18,6 @@
 
     <button class="w-100 btn btn-lg buttLog" type="submit">Accedi</button>
     <div class="supporto">
-        <a href="#">Password dimenticata?</a></br>
-        <a href="#">Torna alla Homepage</a>
+        <a href="index.php">Torna alla Homepage</a>
     </div>
 </form>
