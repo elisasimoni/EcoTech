@@ -50,6 +50,12 @@
             <span class="badge rounded-pill badge-notification bg-danger g-0 ">1
             </span>
             </button>
+
+            <!-- Bottone Profilo/Registrazioe-->
+            <button type="button" class="border-top-0 border-start-0 border-end-0 border-bottom-0 shadow-none text-light bg-transparent g-0" >
+            <i class="bi bi-person-circle m-0 g-0" style="font-size:28px"></i>
+            </button>
+
         </div>
     </div>
     </nav>

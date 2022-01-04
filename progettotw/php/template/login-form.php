@@ -18,6 +18,7 @@
 
     <button class="w-100 btn btn-lg buttLog" type="submit">Accedi</button>
     <div class="supporto">
-        <a href="index.php">Torna alla Homepage</a>
+        <a href="registration.php">Non hai un account? Registrati</a>
+        <p><a href="index.php">Torna alla Homepage</a></p>
     </div>
 </form>
