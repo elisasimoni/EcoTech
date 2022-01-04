@@ -1,11 +1,4 @@
 $(document).ready(function(){
-  
-  $("button#registrati").click(function(){
-
-
-    
-  });
-
 
   $("#registrati").click(function(e) {
 
