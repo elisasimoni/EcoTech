@@ -123,15 +123,15 @@
 			<div class="col-md-6">
 
 				<div class="input-group">
-					<input class="form-control form-control " placeholder="COUPON CODE">
-					<button type="button" class="btn btn-primary">Applica Sconto</button>
+					<input class="form-control form-control rounded-0 border-top-0 border-start-0 border-end-0" placeholder="CODICE SCONTO">
+					<button type="button" class="btn btn-primary rounded-0 border-top-0 border-start-0 border-end-0">Applica Sconto</button>
 				</div>
 
 			</div>
 								
             <!-- Update button -->
 			<div class="col-md-6 text-md-end">
-				<button class="btn btn-primary mb-0" disabled="">Aggiorna Carrello</button>
+				<button class="btn btn-primary mb-0 rounded-0" disabled="">Aggiorna Carrello</button>
 			</div>
 
 		</div>	
