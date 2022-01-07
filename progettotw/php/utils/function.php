@@ -1,7 +1,5 @@
 <?php
 
-//Funzione da implementare per aggiungere la classe active quando si seleziona un link da menù di navigazione
-//attenzione : non devono essere sovrascritte ulteriori classi già presenti. La classe active deve essere aggiunta come ulteriore
 function isActive($pagename, $classStart){
     if(basename($_SERVER['PHP_SELF'])==$pagename){
         echo "class=' $classStart active'";
@@ -55,6 +53,7 @@ function registerLoggedUser($user){
     $_SESSION["email"] = $user["email"];
     $_SESSION["nome"] = $user["nome"];
 }
+<<<<<<< HEAD
 
 function getAction($action){
     $result = "";
@@ -122,3 +121,6 @@ function uploadImage($path, $image){
     return array($result, $msg);
 }
 ?>
+=======
+?>
+>>>>>>> 728175f9df16b8a881ebfd4aa38fa7f5eb079f31

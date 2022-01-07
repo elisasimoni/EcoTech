@@ -1,0 +1,80 @@
+/* Google Font per intestazioni */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+/* Google Font per contenut */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand:wght@400&display=swap');
+  
+body{
+    background-color: #f5f5f5;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Comfortaa', cursive;
+}
+
+.container{
+    max-width: 960px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.breadcrumb.breadcrumb-dots .breadcrumb-item + .breadcrumb-item::before {
+    content: "•";
+    font-size: 22px;
+    line-height: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+span.text-danger{
+    font-size: 21px;
+}
+
+.buttPag{
+    background-color: #4d7298;
+    color: #fff;
+  }
+  
+  .buttPag:hover{
+    background-color: #77a6b6;
+    color: #fff;
+  }
+
+.buttSconto{
+    background-color: #b3d89c;
+    color: #000;
+    font-weight: 600;
+}
+
+.buttSconto:hover{
+    background-color: #a9cf91;
+    color: #000;
+    font-weight: 600;
+}
+
+.numProd{
+    background-color: #4d7298;
+    color: #fff;
+}
+
+.titCarr{
+    color: #4d7298;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
