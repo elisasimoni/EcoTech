@@ -1,52 +1,61 @@
 $(document).ready(function(){
 
-  $("#registrati").click(function(e) {
+function checkisValid(input){
+    $(input).addClass('is-valid');
+    $(input).removeClass('is-invalid');
+}
 
-    
-    e.preventDefault();
-    var form = $("#registrazioneForm")
+function checkisInvalid(input){
+    $(input).addClass('is-invalid');
+    $(input).removeClass('is-valid');
+}
 
-    if($("input#nome").val()==""){
-      $("input#nome").addClass('is-invalid');
-    }else{
-      $("input#nome").addClass('is-valid');
-    }
+if($("input#nome").focusout(function(){
+  if($(this).val() == ""){
+      checkisInvalid($(this));
+  }else{
+      checkisValid($(this));
+  }
+}));
 
-    if($("input#cognome").val()==""){
-      $("input#cognome").addClass('is-invalid');
-    }else{
-      $("input#cognome").addClass('is-valid');
-    }
+if($("input#cognome").focusout(function(){
+  if($(this).val() == ""){
+      checkisInvalid($(this));
+  }else{
+      checkisValid($(this));
+  }
+}));
 
-    if(($("input#cf").val().length == 11 ) || ($("input#cf").val().length == 16)){
-      $("input#cf").addClass('is-valid')
-    }else{
-      $("input#cf").addClass('is-invalid');
-    }
+if($("input#cf").focusout(function(){
+  if(($(this).val().length == 11 ) || ($(this).val().length == 16)){
+      checkisValid($(this));
+  }else{
+      checkisInvalid($(this));
+  }
+}));
 
-    if(($("input#telefono").val().length < 9) || ($("input#telefono").val().length > 15)){
-      $("input#telefono").addClass('is-invalid');
-    }else{
-      $("input#telefono").addClass('is-valid');
-    }
+if($("input#telefono").focusout(function(){
+  if(($(this).val().length < 9) || ($(this).val().length > 15)){
+      checkisInvalid($(this));
+  }else{
+      checkisValid($(this));
+  }
+}));
 
-    if($("input#email").val().includes("@")){
-      $("input#email").addClass('is-valid');
-    }else{
-      $("input#email").addClass('is-invalid');
-    }
+if($("input#email").focusout(function(){
+  if($(this).val().includes("@")){
+      checkisValid($(this));
+  }else{
+      checkisInvalid($(this));
+  }
+}));
 
-    if( ($("input#password").val().length >= 8 ) && ($("input#password").val().match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) && ($("input#password").val().match(/([0-9])/)) && ($("input#password").val().match(/([!,%,&,@,#,$,^,*,?,_,~])/)) ) {
-      $("input#password").addClass('is-valid');
-    }else{
-      $("input#password").addClass('is-invalid');
-      $("div#passError").html(function(){
-        '<p>Password Brutta</p>';
-      });
-    }
-
-    //Make ajax call here
-
-  })
+if($("input#password").focusout(function(){
+  if(($(this).val().length >= 8 ) && ($(this).val().match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) && ($(this).val().match(/([0-9])/)) && ($(this).val().match(/([!,%,&,@,#,$,^,*,?,_,~])/)) ){
+      checkisValid($(this));
+  }else{
+      checkisInvalid($(this));
+  }
+}));
 
 });

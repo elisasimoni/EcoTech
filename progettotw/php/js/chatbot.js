@@ -3,20 +3,20 @@ var botui = new BotUI('ecobot');
 function init() {
     botui.message
         .bot({
-            content: "Hi there! I'm EcoBot",
+            content: "Ciao! Sono EcoBot",
             loading: true,
             delay: 1000,
         }).then(function () {
         return botui.message.bot({
             loading: true,
             delay: 1000,
-            content: "I can help you with your shopping",
+            content: "Sono qui per aiutarti con i tuoi acqusiti.",
         });
     }).then(function () {
         return botui.message.bot({
             loading: true,
             delay: 1000,
-            content: "Do you need help?",
+            content: "Hai bisogno d'aiuto ?",
         });
     }).then(function () {
         return botui.action.button({
@@ -24,10 +24,10 @@ function init() {
             loading: true,
             addMessage: true,
             action: [{
-                text: 'Yes!',
+                text: 'Si',
                 value: 'yes'
             }, {
-                text: 'No.',
+                text: 'No',
                 value: 'no'
             }]
         });
@@ -38,7 +38,7 @@ function init() {
             botui.message.bot({
                 loading: true,
                 delay: 1000,
-                content: "See you later then!!",
+                content: "Arrivederci e Buono Shopping !",
             });
         }
     });
@@ -50,16 +50,16 @@ var question = function () {
         loading: true,
         addMessage: true,
         action: [{
-            text: 'I want to track my order',
+            text: 'Vorrei tracciare il mio ordine',
             value: 'track'
         }, {
-            text: 'I have problem with payment',
+            text: 'Ho problemi con il pagamento',
             value: 'pay'
         },{
-            text: 'The item I want to buy is out of stock',
+            text: 'Il prodotto che vorrei comprare non è disponibile',
             value: 'outof'
         },{
-            text: 'My problem is not in the list',
+            text: 'Il mio problema non è nella lista',
             value: 'no'
         }]
     }).then(function (res) {
@@ -67,27 +67,27 @@ var question = function () {
             return botui.message.bot({
                 loading: true,
                 delay: 1000,
-                content: "You can go to the current section of your profile",
+                content: "Per tracciare il tuo ordine visita questa sezione del sito : <a href='tracking.php' target='_blank'>Tracking</a>",
             });
 
         } else if(res.value == 'pay') {
             return botui.message.bot({
                 loading: true,
                 delay: 1000,
-                content: "I just want to remind you that we accept payment of the follow system: ",
+                content: "Il sistema accetta solo i seguenti metodi di pagamento : PayPal, Carta di Credito ( Visa , Mastercard, American Express ) , Bonifico Bancario. </br> In caso di pagamento tramite bonifico il suo ordine verrà processato solo alla ricezione di quest'ultimo.",
 
             });
         }else if(res.value == 'outof') {
             return botui.message.bot({
                 loading: true,
                 delay: 1000,
-                content: "We ask you to kindly wait for the restock, we will send you a notification when the product will return in stock  ",
+                content: "Ti chiediamo gentilmente di attendere il riassortimento, ti invieremo una notifica quando il prodotto tornerà in stock.",
             });
         }else if(res.value == 'no') {
             return botui.message.bot({
                 loading: true,
                 delay: 1000,
-                content: "Let's contact us! One of our specialist will reply you",
+                content: "Contattaci! Uno dei nostri responsabili ti aiuterà il prima possibile.",
             })
         }
     }).then(function (res) {
@@ -95,7 +95,7 @@ var question = function () {
             return botui.message.bot({
                 loading: true,
                 delay: 1000,
-                content: "Do you have any other question?",
+                content: "Hai altre domande ?",
             });}
     }).then(function () {
         return botui.action.button({
@@ -103,10 +103,10 @@ var question = function () {
             loading: true,
             addMessage: true,
             action: [{
-                text: 'Yes!',
+                text: 'Si',
                 value: 'yes'
             }, {
-                text: 'No.',
+                text: 'No',
                 value: 'no'
             }]
         });
@@ -119,7 +119,7 @@ var question = function () {
             botui.message.bot({
                 loading: true,
                 delay: 1000,
-                content: "See you later then!!",
+                content: "Speriamo di aver risolto tutti i tuoi problemi. Buona giornata e buono shopping !",
             });
         }
     });
