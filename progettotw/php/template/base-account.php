@@ -71,7 +71,7 @@
 
 							<!-- Link Supporto -->
 							<li class="nav-item">
-								<a <?php isActive("support.php","nav-link"); ?> href="support.php">Supporto</a>
+								<a <?php isActive("supporto.php","nav-link"); ?> href="supporto.php">Supporto</a>
 							</li>
 
 						</ul>
