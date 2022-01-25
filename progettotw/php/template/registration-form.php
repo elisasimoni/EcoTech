@@ -1,4 +1,4 @@
-<form id="registrazioneForm" action="#" method="post">
+<form id="registrazioneForm" action="inserireCliente.php?action=1" method="POST" enctype="multipart/form-data">
 
     <!-- Intestazione Pagina -->
     <h1 class="mb-3 d-flex justify-content-center">Registrazione</h1>
