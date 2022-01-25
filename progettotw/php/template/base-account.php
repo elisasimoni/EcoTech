@@ -261,7 +261,7 @@
 									<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 									<li class="nav-item"><a class="nav-link" href="shop.php">Shop</a></li>
 									<li class="nav-item"><a class="nav-link" href="tracking.php">Tracking</a></li>
-									<li class="nav-item"><a class="nav-link" href="support.php">Supporto</a></li>
+									<li class="nav-item"><a class="nav-link" href="supporto.php">Supporto</a></li>
 								</ul>
 
 							</div>
