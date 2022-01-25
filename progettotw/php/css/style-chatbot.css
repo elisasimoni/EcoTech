@@ -1,0 +1,40 @@
+.botui-app-container {
+    height: auto;
+    width: 700px;
+    overflow-y: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.botui-message-content.text {
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    color: #4a4a4a;
+    font-family: 'Lato', sans-serif;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.botui-message-content.loading {
+    background-color: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    color: #4a4a4a;
+    border-radius: 20px;
+}
+
+.botui-actions-buttons {
+    text-align: center;
+}
+
+button.botui-actions-buttons-button {
+    outline: none !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: rgb(12, 188,  135);
+}
+
+.botui-message-content.human {
+    background-color: rgb(12, 188,  135);
+    color: #fff;
+}
