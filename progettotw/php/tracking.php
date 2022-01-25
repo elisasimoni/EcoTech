@@ -1,9 +1,11 @@
 <?php
 require_once("bootstrap.php");
+$templateParams["titolo"] = "Eco-Tech | Tracking Ordini";
+$templateParams["intestazione"] = "intestazione.php";
+$templateParams["titolo-intestazione"] = "Tracking";
 
-$templateParams["titolo"] = "Eco-Tech | Tracking";
-$templateParams["contenuto"] = "tracking-product.php";
+$templateParams["contenuto"] = "track.php";
+$templateParams["quantita"] = $dbh->getQuantitaProduct($idcliente);
 
-$templateParams["quantita"] = $dbh->getQuantitaProduct();
 require("template/base.php");
 ?>

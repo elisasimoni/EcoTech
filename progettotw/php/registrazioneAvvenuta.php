@@ -2,7 +2,7 @@
 require_once("bootstrap.php");
 
 $templateParams["titolo"] = "Eco-Tech | Registrazione";
-$templateParams["contenuto"] = "registration-form.php";
+$templateParams["contenuto"] = "regAvvenuta.php";
 
 
 require("template/base-login.php");

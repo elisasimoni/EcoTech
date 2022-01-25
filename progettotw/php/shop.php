@@ -2,11 +2,11 @@
 require_once("bootstrap.php");
 
 $templateParams["titolo"] = "Eco-Tech | Shop";
-$templateParams["contenuto"] = "product-single-line.php";
+$templateParams["intestazione"] = "intestazione.php";
+$templateParams["titolo-intestazione"] = "Shop";
+$templateParams["contenuto"] = "product.php";
 $templateParams["prodotti"] = $dbh->getProduct();
-
-
-$templateParams["quantita"] = $dbh->getQuantitaProduct();
+$templateParams["quantita"] = $dbh->getQuantitaProduct($idcliente);
 
 require("template/base.php");
 ?>

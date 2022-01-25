@@ -1,9 +1,12 @@
 <?php
 require_once("bootstrap.php");
 
-$templateParams["titolo"] = "Eco-Tech | Dashbord";
-$templateParams["contenuto"] = "hero.php";
+$templateParams["titolo"] = "Eco-Tech | Dashboard";
+$templateParams["titolo-sezione"] = "Dashboard";
+$templateParams["contenuto"] = "notifiche-venditore.php";
+
+$templateParams["notifiche"] = $dbh->getNotifiche();
 
 
-require("template/base-dashbord.php");
+require("template/admin-dash.php");
 ?>
