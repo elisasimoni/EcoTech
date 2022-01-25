@@ -1,23 +1,21 @@
-<form>
-    <h1 class="h3 mb-3 fw-normal text-center">Accedi</h1>
+<form action="loginCliente.php" method="post" name="login_form">
+    <h1 class="mb-3 text-center">Accedi</h1>
 
     <div class="form-floating">
-      <input type="email" class="rounded-0 form-control border-top-0 border-start-0 border-end-0 mb-2 shadow-none" id="floatingInput" placeholder="info@esempiomail.com">
-      <label for="floatingInput"><i class="bi bi-person me-2"></i>Email o Username</label>
+      <input type="email" name="email" class="rounded-0 form-control border-top-0 border-start-0 border-end-0 mb-2 shadow-none" id="email" placeholder="info@esempiomail.com">
+      <label for="email"><i class="bi bi-person me-2"></i>Email o Username</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="rounded-0 form-control border-top-0 border-start-0 border-end-0 shadow-none" id="floatingPassword" placeholder="password">
-      <label for="floatingPassword"><i class="bi bi-lock me-2"></i>Password</label>
+      <input type="password" name="password" class="rounded-0 form-control border-top-0 border-start-0 border-end-0 shadow-none <?php if(isset($_GET["error"])){ echo "is-invalid";}?>" id="password" placeholder="password">
+      <label for="password"><i class="bi bi-lock me-2"></i>Password</label>
+      <div class="invalid-feedback mb-1">
+          <p>Credenziali Errate, riprovare!</p>
+      </div>
     </div>
 
-    <div class="checkbox mb-3">
-        <label>
-            <input type="checkbox" value="remember-me"> Ricordami
-        </label>
-    </div>
-
-    <button class="w-100 btn btn-lg buttLog" type="submit">Accedi</button>
+    <input type="submit" class="w-100 btn btn-success p-3 mb-0 rounded-pill mt-3" value="Accedi" onclick="formhash(this.form, this.form.password)"/>
     <div class="supporto">
-        <a href="index.php">Torna alla Homepage</a>
+        <a class="me-3" href="index.php">Torna alla Homepage</a>
+        <a href="registration.php">Registrati</a>
     </div>
 </form>
